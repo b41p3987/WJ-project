@@ -1,0 +1,343 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*加入border-box，使元素不會增加內距及邊框的寬度*/
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* end css reset */
+
+.clearfix{
+	clear:both; 
+	/*與float搭配使用，清除浮動區塊*/
+}
+
+.wrap{
+	width:100%;
+	height:100px;
+	margin:0 auto;
+	/*background-color:#456456;*/
+	/*background-image: url(S__134815773.jpg);*/
+	z-index:-10;
+
+	
+}
+
+
+.header-container{
+	width:100%;
+	background-color: #FFEBD3;
+		/*background-image: url(S__134815773.jpg);*/
+	padding:20px 50px 20px 50px;
+	position: fixed;
+	
+}
+.header{
+	padding:20px;
+	background-color: #FDB4AD;
+	z-index:999;
+	margin:5px;
+}
+.header h1{
+	float:left;
+	padding-top:10px;
+
+}
+.header h1 a{
+	display:block;
+	width:150px;
+	height:40px;
+	/*background-image:url(https://upload.cc/i1/2018/03/26/bXcgsr.png);*/
+	background-repeat: no-repeat;
+	
+	/*清除文字*/
+	text-indent: 101%;
+	overflow:hidden;
+	white-space: nowrap;
+}
+.header ul{
+	float:center;
+	margin-top:5px;
+
+}
+.header ul li{
+	padding-left: 30px;
+	float:left;
+	padding:5px;
+	
+}
+.header ul li a{
+	display:block;
+	text-decoration: none;
+	padding:5px 10px;
+	color:#264e70;
+	margin:5px;
+}
+.header ul li a:hover{
+	color:black;
+}
+
+
+.mainpage{
+	width:100%;
+	background-color: #FFEBD3;
+	/*height:1000px;*/
+	/*background-image: url(S__134815773.jpg);*/
+	z-index:30;
+}
+.h1-mainpage{
+	padding:150px 0px 50px 0px ;
+	text-decoration: none;
+	text-align: center;
+	font-size: 100px;
+	color:#264e70;
+	font-family: monospace
+	/*font-weight: 50px;*/
+}
+.h3-mainpage{
+   text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	color:#264e70;
+	font-family: monospace;
+}
+.mainpage-button{
+	background-color: transparent;
+	width:1200px;
+	height:150px;
+	position:relative;
+	z-index:10;
+}
+.mainpage-button-decor{
+
+ color:#fff;
+	text-decoration: none;
+	font-family: 微軟正黑體;
+	border:1px block #ff1933;
+	background: #123456;
+	padding:10px 30px;
+	line-height: 24px;
+	display: inline-block;
+	/*border-radius: 22px;*/
+	box-shadow:0 10px 20px rgba(0,0,0,0.5);
+	margin:10px;
+
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+
+	overflow:hidden;
+}
+.introwrap{
+	background-color: white;
+	z-index:100;
+	width:100%;
+	height:300px;
+	padding-bottom: 100px;
+}
+.mainpage-introduction{
+	/*background-color: transparent;*/
+	overflow:hidden;
+	width:1200px;
+	margin:0 auto;
+	background-color: #ffb4ac;
+	z-index:500;
+
+	
+}
+.mainpage-introduction li{
+	display:inline-block;
+	float:left;
+	width:50%;
+	height:100%;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom:80px;
+	margin-top:25px;
+
+	
+
+}
+.mainpage-introduction ul h1{
+	font-weight:bold;
+	margin: 20px;
+	text-decoration: none;
+	text-align: center;
+ 	font-size:40px;
+ 	color:#264e70;
+ 	padding:10px;
+ 	border:2px solid white;
+}
+
+.mainpage-introduction li h1{
+	font-weight:bold;
+	margin-bottom: 5px;
+	text-decoration: none;
+	text-align: left;
+ 	font-size:28px;
+
+
+}
+.mainpage-introduction li h2{
+	font-weight:bold;
+	margin-bottom: 5px;
+	text-decoration: none;
+	text-align: center;
+ 	font-size:50px;
+ 	color:white;
+ 	padding:10px;
+ 	margin:10px;
+}
+.mainpage-introduction li h3{
+	font-weight:bold;
+	margin-bottom: 5px;
+	text-decoration: none;
+	text-align: left;
+ 	font-size:25px;
+ 	color:white;
+ 	padding:10px;
+ 	margin:10px;
+}
+.search-page h1{
+	font-weight:bold;
+	margin-bottom: 5px;
+	text-decoration: none;
+	text-align: left;
+ 	font-size:50px;
+ 	color:black;
+ 	padding:80px;
+ 	margin:10px;
+}
+.new-search{
+	/*padding-top: 50px;*/
+	overflow:hidden;
+	width:1000px;
+	margin:0 auto;
+	/*border:2px solid black;*/
+	height:100%;
+
+}
+.new-search img{
+	width:100%;
+}
+
+.new-search li{
+	display:inline-block;
+	float:left;
+	width:50%;
+	height:100%;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom:80px;
+	margin-top:25px;
+	/*box-shadow: 4px 4px 5px rgba(20%,20%,60%,0.2);*/
+
+}
+.new-search li h2{
+	font-weight:bold;
+	margin-bottom: 5px;
+	text-decoration: none;
+	text-align: center;
+ 	font-size:28px;
+
+}
+.new-search li h4{
+	line-height: 1.2;
+	margin-bottom: 5px;
+	text-decoration: none;
+	font-size:14px;
+}
+
+.connect{
+	
+}
+.connect-text{
+	/*padding-top: 50px;*/
+	overflow:hidden;
+	width:1200px;
+	margin:0 auto;
+	/*border:2px solid black;*/
+	height:500px;
+	/*float:left;*/
+
+}
+.connect-text img{
+	width:100%;
+}
+
+.connect-text li{
+	display:inline-block;
+	float:left;
+	width:50%;
+	height:100%;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom:80px;
+	margin-top:25px;
+	/*box-shadow: 4px 4px 5px rgba(20%,20%,60%,0.2);*/
+
+}
+.connect-text li h2{
+	font-weight:bold;
+	margin-bottom: 5px;
+	text-decoration: none;
+	text-align: left;
+ 	font-size:24px;
+
+}
+.connect-text li h3{
+	line-height: 1.2;
+	margin-bottom: 5px;
+	text-decoration: none;
+	font-size:14px;
+}
